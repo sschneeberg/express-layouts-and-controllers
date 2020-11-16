@@ -1,0 +1,22 @@
+nav {
+    background-color: plum;
+    height: 2rem;
+}
+
+a {
+    color: gold;
+    text-decoration: underline;
+    text-shadow: 1px 1px lightpink;
+    margin: 5px 15px 5px 15px;
+    font-size: 1.5rem;
+}
+
+body {
+    background-color: hotpink;
+    color: whitesmoke;
+}
+
+h3 {
+    color: rgb(218, 28, 218);
+    text-shadow: 2px 2px orchid;
+}

@@ -4,6 +4,9 @@ const ejsLayouts = require('express-ejs-layouts');
 
 app.set('view engine', 'ejs');
 app.use(ejsLayouts);
+//add css
+app.use(express.static(__dirname + '/public'));
+app.use('/style', express.static(__dirname + 'public/style'));
 
 app.get('/', function(req, res) {
     res.render('index');
