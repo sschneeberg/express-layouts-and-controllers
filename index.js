@@ -13,6 +13,12 @@ app.get('/', function(req, res) {
     res.render('index');
 })
 
+//WITH CONTROLLERS
+app.use('/faves', require('./controllers/faves'));
+app.use('/hates', require('./controllers/hates'));
+
+
+/* WITHOUT CONTROLLERS
 app.get('/:state/:category', function(req, res) {
     if (req.params.state === 'faves') {
         if (req.params.category === 'animals') {
@@ -32,7 +38,7 @@ app.get('/:state/:category', function(req, res) {
         }
     }
 
-})
+}) */
 
 
 
